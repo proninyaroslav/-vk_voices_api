@@ -25,9 +25,10 @@ log("Login: ", end="")
 sys.stderr.flush()
 login = sys.stdin.readline()
 password = getpass(stream=sys.stderr)
+voice_input = open(args.path, 'rb')
 
 try:
-    vk_voice.send(login, password, args.path, args.user_id, args.chat)
+    vk_voice.send(login, password, voice_input, args.user_id, args.chat)
 
 except Exception as e:
     log(e)
