@@ -1,4 +1,7 @@
-"""Vk API for send voices"""
+""" Vk API for send voices
+
+For work on mobile devices, the audio file format must be monaural.
+"""
 
 import vk_requests # Only >= 1.2.0, see https://github.com/prawn-cake/vk-requests/issues/37
 import json
